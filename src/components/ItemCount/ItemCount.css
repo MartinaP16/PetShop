@@ -1,0 +1,11 @@
+h4{
+    color: #0a0303;
+}
+.stock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}

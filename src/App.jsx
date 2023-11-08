@@ -1,14 +1,12 @@
 import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import Routing from './components/Routing/Routing'
 
 function App() {
   return (
     <>
-      <div>
-        <NavBar/>
+      <div>                       
+        <Routing/>
       </div>
-        <ItemListContainer props={'Bienvenido'}/>
     </>
   )
 }
