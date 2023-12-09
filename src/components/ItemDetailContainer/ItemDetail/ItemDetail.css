@@ -1,17 +1,17 @@
-.product {
+.productDetail {
     background-color: rgb(231, 216, 248);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10%;
     padding: 10px 60px;
     text-align: center;
-    width: 14vw;
+    width: 40vw;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     overflow: hidden;
     position: relative;
 }
  
-.product img {
+.productDetail img {
     max-width: 150px;
     max-height: 150px;
     height: auto;
@@ -22,13 +22,13 @@
 
 }
  
-.product h2 {
+.productDetail h2 {
     font-size: 1.5rem;
     margin: 10px 0;
     color: rgb(7, 4, 7);
 }
  
-.product p {
+.productDetail p {
     font-size: 1.1rem;
     color: #0a0303;
     margin: 5px 0;

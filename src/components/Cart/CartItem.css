@@ -1,0 +1,30 @@
+.Items{
+    padding-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: space-around;
+}
+  
+.product-item {
+    flex: 0 1 calc(30% - 20px); /* Ancho del 30% y resta el espacio entre los elementos */
+
+}
+
+.button-Delete{
+    background-color:darkred;
+}
+
+h2{
+    padding-top: 2vh;
+}

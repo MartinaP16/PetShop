@@ -1,4 +1,4 @@
-import CartWidget from "../CartWidget/CartWidget"
+import CartWidget from "./CartWidget/CartWidget"
 import PetShop from '../../assets/PetShop.png'
 import {Link}  from 'react-router-dom'
 
@@ -18,7 +18,7 @@ const NavBar = () => {
                     <button>Snack</button>
                 </Link>       
                 <Link to='/Accesorios' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
-                   <button>Accesorios</button>
+                <button>Accesorios</button>
                 </Link>                   
                 <Link to='/Higiene'  className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                     <button>Higiene</button>
@@ -27,7 +27,7 @@ const NavBar = () => {
                     <button>Salud</button>
                 </Link>                                              
             </div>
-            <CartWidget/>
+            <CartWidget/>            
         </nav>
     )
 }

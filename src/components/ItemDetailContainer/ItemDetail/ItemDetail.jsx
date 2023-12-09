@@ -1,36 +1,45 @@
-import { useState } from "react"
-import ItemCount from '../ItemCount/ItemCount'
+import { useContext, useState } from "react"
+import ItemCount from './ItemCount/ItemCount'
 import { Link } from "react-router-dom"
 import './ItemDetail.css'
+import { CartContext } from '../../Context/CartContext'
 
-const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
+const ItemDetail = ({id, Nombre, Imagen, Categoria, Descripcion, Precio, Stock}) =>{
 
     const [quantityAdded, setQuantityAdded] = useState(0)
+    const { addItem } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
-    }
 
+        const item = {
+            id, Nombre, Precio, Imagen
+        }
+
+        addItem(item, quantity)
+        console.log(item, quantity);
+    }
+    
     return(
-        <article className="product">
+        <article className="productDetail">
             <header>
                 <h2>
-                    {name}
+                    {Nombre}
                 </h2>
             </header>     
             <picture>
-                <img src={img} alt={name}>
+                <img src={Imagen} alt={Nombre}>
                 </img >
             </picture>   
             <section>
                 <p>
-                    Categoria: {category}
+                    Categoria: {Categoria}
                 </p>
                 <p>
-                    Descripción: {description}
+                    Descripción: {Descripcion}
                 </p>
                 <p>
-                    Precio: ${price}
+                    Precio: ${Precio}
                 </p>
             </section>
             <footer >
@@ -39,7 +48,9 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) =>{
                         <Link to='/cart'> Terminar Compra </Link>
                     ) : 
                     (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                        <ItemCount initial={1} Stock={Stock} onAdd={handleOnAdd}/>
+                    
+
                     )
                 }
             </footer>

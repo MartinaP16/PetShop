@@ -1,0 +1,141 @@
+.container-checkout{
+    display:flex;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+.container-checkout-products{
+    background-color: #4b1c71;
+    width: 50%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: 0 auto;
+    overflow-y: auto; /* Se mantiene la propiedad para scroll vertical */
+    max-height: 50vh;
+}
+.container-checkout-payment{
+    background-color: #c684fc;
+    width: 50%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    gap: 1.5vh;
+}
+
+
+.checkout-product {
+    background-color: rgb(231, 216, 248);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    width: 80%;
+    padding: 10px 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 1vh;
+    transform: translateY(-5px) scale(1.03);
+    display: flex;
+    min-height: 80px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.checkout-product img {
+    width: 50%;
+    border-radius: 10%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.checkout-product h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #323754;
+}
+ 
+.checkout-product p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.product-item-checkout{
+    display: flex;
+    justify-content: space-around;
+}
+.product-item-checkout picture{
+    width: 20%;
+}
+.product-description{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    width:20%;
+    flex-direction: row-reverse;
+}
+
+.total-price{
+    font-size:xx-large;
+    margin: auto auto 1.2vh auto;
+}
+
+.container-checkout-payment{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container-checkout-payment input{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    height: 3.5vh;
+    border: 1px solid grey;
+    color: grey;
+    text-align: center;
+}
+
+.container-checkout-payment > .label {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-checkout-payment > .label > .personalInfo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.creditCardNumber{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.expirationDate{
+    display: flex;
+    flex-direction: column;
+    width: 20%
+}
+.cvv{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.container-checkout-payment > button{
+    margin-top: 5vh;
+}
+
+.mensajeExito{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
