@@ -2,7 +2,7 @@
 
 ## ¿Qué es la aplicación?
 
-La aplicación **Antartida Pet Shop** es un sitio web que cumple la función de una tienda online para productos de animales. La aplicación permite a los usuarios comprar una amplia variedad de productos para sus mascotas, incluyendo comida, snack, accesorios, higiene y salud.
+La aplicación **Pet Shop - Antártida** es un sitio web que cumple la función de una tienda online para productos de animales. La aplicación permite a los usuarios comprar una amplia variedad de productos para sus mascotas, incluyendo comida, snack, accesorios, higiene y salud.
 
 La aplicación está diseñada para ser fácil de usar y navegar. Los usuarios pueden encontrar los productos que buscan navegando por las categorías de productos. Una vez que los usuarios encuentran un producto que les interesa, pueden leer una descripción detallada.
 
@@ -33,7 +33,7 @@ Para finalizar la compra, el usuario debe seguir estos pasos:
 
 **Resultado:**
 
-Se realiza la compra descontando el stock disponible de la tienda.
+Se realiza la compra descontando el stock disponible de la tienda. Y muestra al usuario el codigo de la compra.
 
 # Base de Datos
 
