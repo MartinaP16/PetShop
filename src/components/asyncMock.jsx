@@ -1,4 +1,4 @@
-import { appFirestore } from '../main'
+import { appFirestore } from '../../main.jsx'
 import { query, where, collection, doc, getDoc, getDocs, getFirestore, updateDoc, addDoc,  serverTimestamp} from 'firebase/firestore'
 
 const fetchProducts = async () => {
